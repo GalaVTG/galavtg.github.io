@@ -1,0 +1,95 @@
+main {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  background-image: -webkit-linear-gradient(#ddf9fa, #e9f3f7);
+  height: 100vh;
+  border-bottom-right-radius: 35%;
+}
+@media (min-width: 578px) {
+  main {
+    padding-top: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  main {
+    padding-top: 5rem;
+  }
+}
+main .image {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 980px) {
+  main .image {
+    width: 90%;
+  }
+}
+main h3 {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  main h3 {
+    font-size: 2.5rem;
+  }
+}
+main p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  main p {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+}
+main .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+main .buttons button {
+  width: 40%;
+}
+
+#bg {
+  background-image: -webkit-linear-gradient(#ddf9fa, #e9f3f7);
+}
+
+article p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  article p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+article .image {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 980px) {
+  article .image {
+    width: 90%;
+  }
+}
+article .galaparagraph {
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  article .galaparagraph {
+    margin-top: 4rem;
+  }
+}
+article .galabtn {
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  article .galabtn {
+    margin-top: 2rem;
+  }
+}
