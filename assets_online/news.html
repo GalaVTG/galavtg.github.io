@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,52 +8,107 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style>
+            * {
+                padding: 0; margin: 0; box-sizing: border-box;
+            }
+            body {
+                padding-bottom: 2rem;
+            }
             .container {
                 width: 90%;
-                font-size: 1.2rem;
                 margin-left: 5%;
+            }
+            .image {
+                width: 100%;
+                height: calc(100% * 0.7);
+            }
+
+            .title {
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+            }
+            .title > h3 {
+                font-size: 1.5rem;
+                margin-bottom: 4px;
+            }
+            .title > h4 {
+                font-size: 1.3rem;
+                font-weight: 300;
+                color: gray;
+            }
+            .container > h3 {
+                margin: 1.5rem 0 1rem 0;
+                background-color: #ddd;
+                padding: 4px;
+                padding-left: 8px;
+                border-radius: 10px;
+            }
+            p {
+                font-size: 18px;
                 line-height: 1.8rem;
                 text-align: justify;
+            }
+            cite {
+                width: 80%;
+                margin-left: 10%;
+                padding: 1rem 0;
+            }
+
+            .alert {
+                background-color: rgba(230, 240, 250, 1);
+                border: 1px solid rgba(115, 170, 220, 1);
+                border-radius: 16px;
+                padding: 16px;
+            }
+            .alert h3 {
+                margin: 0.5rem 0;
+            }
+            h2 {
+                text-align: center;
+                margin: 1rem 0;
             }
         </style>
     </head>
     <body>
-        
+        <img src='https://galavtg.github.io/assets_online/newsicon.jpg' alt='visitingto'  class='image'/>
         <div class="container">
-        <h3>
-            NEWS!!!!!!!!
-        </h3>
-        <div class="datePublish">November 28, 2021</div>    
-        
-        <p>
-            Recently, the national government has used quarantine protocols as a sign of "strictness" that is implemented in an area. These are commonly known as ECQ (Enhance Community Quarantine), MECQ (Modified Enhance Community Quarantine), and GCQ (General Community Quarantine). There are three levels of rules that constrict people's activity. However, as Covid-19 vaccinated people are more than 20% of the Philippines population and decreasing number of cases per day, a new guide is implemented.
-        </p>
+            <div class='title'>
+                <h3>Latest News in Santa Rosa Laguna</h3>
+                <h4>Jan 6, 2022</h4>
+            </div>
 
-        <b>This new guideline is called Covid-19 Alert Levels that has five (5) levels. These are: </b>
-        
-        <ul>
-            <li>
-                <h4>Alert Level 1</h4>
-                Refers to areas wherein case transmission is low and decreasing, total bed utilization rate, and intensive care unit utilization rate is low.
-            </li>
-            <li>
-                <h4>Alert Level 2</h4>
-                Refers to areas wherein case transmission is low and decreasing, healthcare utilization is low, or case counts are low but increasing, or case counts are low and decreasing but total bed utilization rate and intensive care unit utilization rate is increasing.
-            </li>
-            <li>
-                <h4>Alert Level 3</h4>
-                Refers to areas wherein case counts are high and/or increasing, with total bed utilization rate and intensive care unit utilization rate at increasing utilization. 
-            </li>
-            <li>
-                <h4>Alert Level 5</h4>
-                Refers to areas wherein case counts are alarming, with total bed utilization rate and intensive care unit utilization rate at critical utilization
-            </li>
-        </ul>
+            <div class="alert">
+                <h3>Covid-19 Alert: Alert Level 3</h3>
+                <p>
+                    Santa Rosa City is under <b>Alert Level 3</b>.
+                    The restriction gets tighter after the holiday season with the increasing Covid cases in the philipines.
+                    Wearing a facemask is mandatory but a face shield is no longer needed even inside the malls.
+                    However, being a <b>fully vaccinated</b> is a must to enjoy many perks and privileges as you travel in Santa Rosa city. Please always bring your copy of proof of being fully vacinated!
+                    A photocopy or even a picture of the proof you are fully vaccinated can be done.
+                    If you are still not vaccinated or even just have a single dose, you can still enjoy Santa Rosa.
+                    However, you will be limited to many outdoor establishments.
+                </p>
+                
+            </div>
 
-        <p style="margin-bottom: 3rem;">
-            Luckily Santa Rosa city is now under alert level 2 (as of this writing) that enables to travel freely across the city. You may now get a ride into the Enchanted Kingdom or take foods trips in malls. Remember that many dine-in establishments and theme parks require a fully vaccinated individual to enjoy this.
-        </p>
+            <h2>News Headlines</h2>
+
+            <h3>Enchanted Kingdom is closed</h3>
+            <p>
+            Enchanted Kingdom is closed until January 16.
+            Althought there are allowed to operate, even with alert level 3,
+            they choose to closed to give way to the safety of its staff and its guest.</p>
+
+            <h3>Covid Cases Raise almost more than 10 times</h3>
+            <p>
+                During the December of the year 2021, the Covid cases in Santa Rosa is mostly less than 15 cases but
+                in this January, the cases is now reach 146 active cases (Jan 06).
+                This peak of cases, we do recomenend that stay home avoid travell.
+            </p>
+
+            <h3>Establishments are still opens</h3>
+            <p>Please bring proof of fully vacinated. </p>
         </div>
-
     </body>
 </html>
+
