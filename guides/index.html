@@ -9,78 +9,116 @@
 
         <style>
             * {
-                padding: 0; margin: 0; box-sizing: border-box;
+                padding: 0;
+                margin: 0;
             }
             body {
-                padding-bottom: 2rem;
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
             }
             .container {
-                width: 90%;
                 margin-left: 5%;
+                width: 90%;
+                margin-top: 16px;
             }
-            .image {
-                width: 100%;
-                height: calc(100% * 0.7);
+            .headtext {
+                font-size: 16px;
+                margin-bottom: 8px;
             }
-
-            .title {
-                margin-top: 0.5rem;
-                margin-bottom: 1rem;
-            }
-            .title > h3 {
-                font-size: 1.5rem;
-                margin-bottom: 4px;
-            }
-            .title > h4 {
-                font-size: 1.3rem;
-                font-weight: 300;
-                color: gray;
-            }
-            .container > h3 {
-                margin: 1.5rem 0 1rem 0;
-                background-color: #ddd;
+            .guideContainer {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 12px;
+                border: 1px solid rgba(115, 170, 220, 1);
+                border-radius: 12px;
+                background-color: rgba(230, 240, 250, 1);
                 padding: 4px;
-                padding-left: 8px;
-                border-radius: 10px;
             }
-            p {
+            .icon {
+                width: 64px;
+                height: 64px;
+                margin-top: 8px;
+                margin-left: 8px;
+            }
+            .iconContainer {
+                width: 80px;
+            }
+            .descriptionContainer {
+                flex: 1;
+            }
+            .guideTitle {
+                color: darkblue;
+                font-size: 20px;
+                padding-left: 0;
+            }
+            .guideDescription {
+                align-self: stretch;
                 font-size: 18px;
-                line-height: 1.8rem;
-                text-align: justify;
-            }
-            cite {
-                width: 80%;
-                margin-left: 10%;
-                padding: 1rem 0;
+                padding-left: 12px;
             }
         </style>
     </head>
     <body>
-        <img src='https://galavtg.github.io/assets_online/travellingto.jpg' alt='visitingto'  class='image'/>
-        <div class="container">
-            <div class='title'>
-                <h3>JEEPNEEY ADASDASDASDASDAD</h3>
-                <h4>Jan 5, 2022</h4>
+    <div class="container">
+        <div class='guideContainer' onclick="goto(`galavtg.github.io/guides/news`)">
+            <div class="iconContainer">
+                <img class='icon' src='https://galavtg.github.io/guides/assets/news.png' alt='news.png' />
             </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus error explicabo mollitia fuga tenetur deleniti,
-                temporibus perspiciatis ipsam cupiditate, sit sed consequatur rerum a.
-                Cumque deleniti nesciunt enim vel officia incidunt, corrupti repellendus
-                quibusdam nihil reiciendis, cum voluptates quas praesentium ducimus, exercitationem
-                distinctio sapiente nostrum dolores! Cum dolor repudiandae necessitatibus?
-            </p>
-
-            <h3>Age Limits</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus error explicabo mollitia fuga tenetur deleniti,
-                temporibus perspiciatis ipsam cupiditate, sit sed consequatur rerum a.
-                Cumque deleniti nesciunt enim vel officia incidunt, corrupti repellendus
-                quibusdam nihil reiciendis, cum voluptates quas praesentium ducimus, exercitationem
-                distinctio sapiente nostrum dolores! Cum dolor repudiandae necessitatibus?
-            </p>
-
+            <div class='descriptionContainer'>
+                <p class='guideTitle'>Latest News</p>
+                <p class="guideDescription">Get the lastest news about Santa Rosa and latest Covid restriction</p>
+            </div>
         </div>
+
+        <div class='guideContainer' onclick="goto(`galavtg.github.io/guides/visitingguide`)">
+            <div class="iconContainer">
+                <img class='icon' src='https://galavtg.github.io/guides/assets/list.png' alt='news.png' />
+            </div>
+            <div class='descriptionContainer'>
+                <p class='guideTitle'>Visiting Guide</p>
+                <p class="guideDescription">Regulations and safety you should know when before visiting</p>
+            </div>
+        </div>
+
+        <div class='guideContainer' onclick="goto(`galavtg.github.io/guides/publictranspo`)">
+            <div class="iconContainer">
+                <img class='icon' src='https://galavtg.github.io/guides/assets/bus.png' alt='news.png' />
+            </div>
+            <div class='descriptionContainer'>
+                <p class='guideTitle'>Public transport</p>
+                <p class="guideDescription">Public transport route that you may take to get into Santa Rosa.</p>
+            </div>
+        </div>
+
+        <div class='guideContainer' onclick="goto(`galavtg.github.io/guides/journeyguide`)">
+            <div class="iconContainer">
+                <img class='icon' src='https://galavtg.github.io/guides/assets/globe.png' alt='news.png' />
+            </div>
+            <div class='descriptionContainer'>
+                <p class='guideTitle'>Journey Guide</p>
+                <p class="guideDescription">Your journey guide to the tourist places in Santa Rosa</p>
+            </div>
+        </div>
+
+        <div class='guideContainer' onclick="goto(`galavtg.github.io/guides/jeepneyroutes`)">
+            <div class="iconContainer">
+                <img class='icon' src='https://galavtg.github.io/guides/assets/building.png' alt='news.png' />
+            </div>
+            <div class='descriptionContainer'>
+                <p class='guideTitle'>Jeepney routes</p>
+                <p class="guideDescription">Jeepney routes and path</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function goto(link) {
+            window.location = "https:///" + link;
+        }
+    </script>
+
     </body>
 </html>
+
