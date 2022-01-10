@@ -1,3 +1,25 @@
 {
-    "text": "asdasdasdasdasdasdasdasdasdasdasd"
+    "articles": [
+        {
+            "title": "The Santa Rosa City Local Hero",
+            "date": "Dec 2021",
+            "text": "Santa Rosa city has its own local hero, his name is Col. Basilio Barroma Gonzalez.",
+            "storyjson": "santarosalocalhero.json",
+            "link": "https://galavtg.github.io/articles/localhero.html"
+        },
+        {
+            "title": "The Tiongco Brothers",
+            "date": "July 2021",
+            "text": "The Tiongco Brothers (Fernando, Emilio, and Arthuro) are well-known pop artists in the \"50s to \"70s.",
+            "storyjson": "tioncobrothers.json",
+            "link": "https://galavtg.github.io/articles/tiongco.html"
+        },
+        {
+            "title": "The 17th City Hood Anniversary",
+            "date": "July 2021",
+            "text": "The Lion City of the South celebrates its 17th anniversary of the declaration of cityhood on July 10.",
+            "storyjson": "cityhood.json",
+            "link": "https://galavtg.github.io/articles/cityhood.html"
+        }
+    ]
 }
