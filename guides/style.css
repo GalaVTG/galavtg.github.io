@@ -50,6 +50,9 @@ ul {
     width: 90%;
     margin: 1rem 10%;
 }
+ul li {
+    margin-bottom: 0.5rem;
+}
 ul li a {
     font-size: 1.3rem;
     text-decoration: none;
